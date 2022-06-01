@@ -1,15 +1,24 @@
 <template>
   <div class="balance">
     <div>
-      <p class="balance__label">Current balance</p>
+      <p class="balance__label">Saldo Atual</p>
       <p class="balance__date">As of <span class="date">05/03/2037</span></p>
     </div>
-    <p class="balance__value">0000€</p>
+    <p class="balance__value">${{ currentBalance }}</p>
   </div>
 </template>
 
 <script>
-export default {}
+
+import { GET_BALANCE } from '@/store/user_account/variables/getters'
+
+export default {
+  computed: {
+    currentBalance () {
+      return this.$store.getters[GET_BALANCE]
+    }
+  }
+}
 </script>
 
 <style>

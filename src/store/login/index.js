@@ -26,7 +26,7 @@ export const login = {
         })
       }
 
-      dispatch(GET_CURRENT_ACCOUNT, { currentAccount })
+      dispatch(GET_CURRENT_ACCOUNT, currentAccount)
     }
   }
 }

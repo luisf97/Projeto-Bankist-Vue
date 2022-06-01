@@ -29,6 +29,7 @@
 
 <script>
 import Vue from 'vue'
+import { mapGetters } from 'vuex'
 import { accounts } from '@/repositories/accounts'
 import { GET_SCREEN_TEXT_CONTENT } from '@/store/screen/variables/getters'
 import { LOGIN } from '@/store/login/variables/actions'
@@ -50,8 +51,9 @@ export default Vue.extend({
     }
   },
   computed: {
+    ...mapGetters([GET_SCREEN_TEXT_CONTENT]),
     text_content () {
-      return this.$store.getters[GET_SCREEN_TEXT_CONTENT]
+      return this.GET_SCREEN_TEXT_CONTENT
     }
   }
 })

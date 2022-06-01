@@ -3,7 +3,7 @@ import Vuex from 'vuex'
 
 import { SET_CURRENT_ACCOUNT } from './variables/mutations'
 import { GET_CURRENT_ACCOUNT } from './variables/actions'
-import { GET_ACCOUNT } from './variables/getters'
+import { GET_ACCOUNT, GET_BALANCE } from './variables/getters'
 
 Vue.use(Vuex)
 
@@ -28,6 +28,9 @@ export const userAccount = {
   getters: {
     [GET_ACCOUNT]: state => {
       return state
+    },
+    [GET_BALANCE]: state => {
+      return state.movements.reduce((acc, mov) => acc + mov, 0)
     }
   }
 }

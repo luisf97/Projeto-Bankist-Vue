@@ -1,6 +1,6 @@
 const account1 = {
   owner: 'Jonas Schmedtmann',
-  movements: [200, 450, -400, 3000, -650, -130, 70, 1300],
+  movements: [12590],
   interestRate: 1.2, // %
   username: 'js',
   pin: 1111
@@ -8,7 +8,7 @@ const account1 = {
 
 const account2 = {
   owner: 'Jessica Davis',
-  movements: [5000, 3400, -150, -790, -3210, -1000, 8500, -30],
+  movements: [23650],
   interestRate: 1.5,
   username: 'jd',
   pin: 2222
@@ -16,7 +16,7 @@ const account2 = {
 
 const account3 = {
   owner: 'Steven Thomas Williams',
-  movements: [200, -200, 340, -300, -20, 50, 400, -460],
+  movements: [48000],
   interestRate: 0.7,
   username: 'stw',
   pin: 3333
@@ -24,7 +24,7 @@ const account3 = {
 
 const account4 = {
   owner: 'Sarah Smith',
-  movements: [430, 1000, 700, 50, 90],
+  movements: [30000],
   interestRate: 1,
   username: 'ss',
   pin: 4444
@@ -32,7 +32,7 @@ const account4 = {
 
 const account5 = {
   owner: 'Luis Fernando',
-  movements: [430, 1000, 700, 50, 558, -458],
+  movements: [1050],
   interestRate: 1.2,
   username: 'lf',
   pin: 5555

@@ -9,5 +9,3 @@ export default {
   components: { FullPageTemplate }
 }
 </script>
-
-<style></style>

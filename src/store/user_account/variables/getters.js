@@ -1,1 +1,3 @@
 export const GET_ACCOUNT = 'GET_CURRENT_ACCOUNT'
+
+export const GET_BALANCE = 'GET_CURRENT_BALANCE'
